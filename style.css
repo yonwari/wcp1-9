@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #6c6b6b;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+main {
+  width: 960px;
+  margin: 50px 0 50px 0;
+}
+
+.content-box {
+  float: left;
+  width: 300px;
+  border: 1px solid lightgray;
+  margin-right: 30px;
+  position: relative;
+}
+
+.content-box:last-child {
+  margin-right: 0;
+}
+
+.title {
+  margin: 10px;
+}
+
+.paragraph {
+  margin: 0 10px 10px 10px;
+  font-size: 15px;
+}
+
+.step-number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: orange;
+  color: white;
+  padding: 3px;
+
+}
+
+
+.image1 {
+  height: 150px;
+  background-image: url(img/flow01.png);
+  background-position: bottom;
+  background-size: cover;
+  margin: 10px;
+
+}
+
+.image2 {
+  height: 150px;
+  background-image: url(img/flow02.png);
+  background-position: bottom;
+  background-size: cover;
+  margin: 10px;
+
+}
+
+.image3 {
+  height: 150px;
+  background-image: url(img/flow03.png);
+  background-position: bottom;
+  background-size: cover;
+  margin: 10px;
+
+}
+
+
+/*レスポンシブ*/
+@media screen and (max-width:768px) {
+  main {
+    width: 100%;
+    margin: 50px auto;
+  }
+
+  .image1{
+    height: 125px;
+  }
+  .image2{
+    height: 125px;
+  }
+  .image3{
+    height: 125px;
+  }
+
+  .step-number {
+    font-size: 75%;
+  }
+
+  .content-box {
+    float: none;
+    width: 90%;
+    margin: 0 auto 20px auto;
+  }
+
+  .content-box:last-child {
+    margin: 0 auto;
+  }
+
+  .title {
+    font-size: 90%;
+  }
+
+  .paragraph {
+    font-size: 75%;
+  }
+
+}
+
+
+
+
+
