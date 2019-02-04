@@ -97,14 +97,20 @@ main {
     font-size: 75%;
   }
 
+  .content-boxes {
+    width: 90%;
+    margin: 0 auto;
+  }
+
   .content-box {
     float: none;
-    width: 90%;
-    margin: 0 auto 20px auto;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-right: 0px;
   }
 
   .content-box:last-child {
-    margin: 0 auto;
+    margin-bottom: 0;
   }
 
   .title {
