@@ -11,9 +11,9 @@
   clear: both;
 }
 
-main {
+.content-boxes {
   width: 960px;
-  margin: 50px 0 50px 0;
+  margin: 50px auto;
 }
 
 .content-box {
@@ -99,7 +99,6 @@ main {
 
   .content-boxes {
     width: 90%;
-    margin: 0 auto;
   }
 
   .content-box {
